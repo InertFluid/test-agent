@@ -36,6 +36,7 @@ tools = [calculator, echo]
 llm = ChatGroq(
     model="llama-3.1-8b-instant",  # fast + free-tier friendly
     temperature=0
+    api_key=os.environ.get("GROQ_API_KEY")
 )
 
 # ----------------------
